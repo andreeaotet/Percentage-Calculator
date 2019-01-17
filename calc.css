@@ -1,0 +1,86 @@
+body {
+    /* color: #000000;
+    background-color: #f0f0f0; */
+    font-family: Arial, sans-serif;
+    /* font-size: 100%; */
+    margin: 0;
+    
+}
+
+div {
+    display: block;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+div.calculatorWrap {
+    display: block;
+    background: #f0f0f0;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 0.9em;
+    width: 300px;
+    height: 350px;
+    align-self: center;
+}
+
+div.calculatorTitle {
+    color: #fff;
+    background-color: #B64B39;
+    font-weight: bold;
+    margin: -0.3em -0.3em 1em -0.3em;
+    border-bottom: 1px solid #aaa;
+    padding: 0.3em;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 0.5em;
+}
+
+div.calculatorInputs {
+    margin: 0.5em 0em 0.5em 0em;
+    text-align: center;
+}
+
+div.calcGroup1 {
+    text-align: center;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+.small {
+    font-size: 0.85em;
+}
+
+.note {
+    font-weight: normal;
+    font-style: italic;
+    color: #666;
+}
+
+div.inputVariable {
+    padding-top: 4px;
+}
+
+#numField1 {
+    width: 80px;
+}
+
+#numField2 {
+    width: 80px;
+}
+
+div.calculatorButton {
+    margin: 0.5em 0em 0.5em 0em;
+}
+
+.floatRight {
+    float: right;
+}
+
+.floatLeft {
+    float: left;
+}

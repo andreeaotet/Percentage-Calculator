@@ -1,0 +1,48 @@
+<! DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+    <div class="calculatorWrap">
+        <div class="calculatorTitle">
+            <h1>Percentage Calculator</h1>
+        </div>
+        <div class="calculatorInputs">
+            <div class="calcGroup1">
+                <label for="given_data">Choose:</label><br><br>
+                <form id="calcOptions">
+                    <select name="given_data" id="select" onchange="changeCalcTopic">
+                        <option value="0">Select an option</option>
+                        <option value="1">What is Y% of X?</option>
+                        <option value="2">X is Y% of what?</option>
+                        <option value="3">What % of X is Y?</option>
+                        <option value="4">X% of what is Y?</option>
+                        <option value="5">X is what % of Y?</option>
+                    </select>
+                </form>
+                <div class="calculatorInputs">
+                    <span class="note small">
+                        <h5 id="calcTopic"></h5>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="calculatorInputs">
+            <form id="xIsWhatPercentOfY">
+                <input type="text" class="inputVariable" id="numField1"> is what % of
+                <input type="text" class="inputVariable" id="numField2"> ?<br><br>
+                <input type="reset" name="reset" value="Clear" onclick="return resetCalculator(this.form);" class="calculatorButton floatLeft">
+                <input type="submit" value="Calculate" class="calculatorButton floatRight">
+            </form>
+        </div>
+        <h3 id="resultField"></h3>
+    </div>
+
+    <script type="text/javascript" src="calc.js"></script>
+</body>
+
+</html>
