@@ -79,3 +79,27 @@ form.addEventListener('submit', function (event) {
         event.preventDefault();
     }
 })
+
+function resetCalculator(form) {
+    // clearing inputs
+    var inputs = form.getElementsByTagName('input');
+    for (var i = 0; i < inputs.length; i++) {
+        switch (inputs[i].type) {
+            case 'number':
+            case 'text':
+                inputs[i].value = '';
+                break;
+            case 'radio':
+            case 'checkbox':
+                inputs[i].checked = false;
+        }
+    }
+
+    var calcAns = document.getElementById('calculatorAnswer');
+    if (typeof (calcAns) != 'undefined' && calcAns != null) {
+        // exists
+        document.getElementById('calculatorAnswer').innerHTML = 'Answer:<br><br>';
+    }
+
+    return false;
+}

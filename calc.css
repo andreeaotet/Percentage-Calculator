@@ -1,10 +1,10 @@
 body {
-    /* color: #000000;
-    background-color: #f0f0f0; */
     font-family: Arial, sans-serif;
     /* font-size: 100%; */
     margin: 0;
-    
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
 }
 
 div {
@@ -104,7 +104,7 @@ form input[type="reset"], input[type="submit"] {
     cursor: pointer; */
 }
 
-div.calculatorAnswer {
+#calculatorAnswer {
     color: #333333;
     background-color: #FFFFFF;
     border: 1px solid #aaa;
@@ -114,3 +114,11 @@ div.calculatorAnswer {
     font-size: 100%;
     height: 30px;
 }
+
+/* ############### PHONE ################### */
+/* 
+@media screen and (max-width:600px){div#wrapper{margin:0px auto 2px auto;}
+.gsc-clear-button{margin-left:16px;}
+div.sharelabel{margin-bottom:10px;}
+p.cite{line-height:1.5em;}
+} */
