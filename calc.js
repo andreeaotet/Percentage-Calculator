@@ -3,6 +3,7 @@ var numField2 = document.getElementById('numField2');
 var resultField = document.getElementById('resultField');
 var form = document.getElementById('xIsWhatPercentOfY');
 var form2 = document.getElementById('calcOptions');
+var calcAns = document.getElementById('calculatorAnswer');
 
 form2.addEventListener('click', changeCalcTopic);
 function changeCalcTopic() {
@@ -23,10 +24,12 @@ function changeCalcTopic() {
         newTopic = "";
     }
 
-    var calcTopic = document.getElementById('calcTopic').innerText = newTopic;
+    var calcTopic = document.getElementById('calcTopic');
+    calcTopic.innerText = newTopic;
 };
 
 changeCalcTopic();
+
 
 form.addEventListener('submit', function (event) {
     var topicOption = document.getElementById('select').value;
@@ -57,7 +60,7 @@ form.addEventListener('submit', function (event) {
         var result3 = x / y;
         var percent2 = result3 * 100;
 
-        resultField.innerText = "Answer: " + result3;
+        resultField.innerText = "Answer: " + percent2;
         event.preventDefault();
     } else if (topicOption == 3) {
         var x = parseFloat(numField1.value);
@@ -78,7 +81,8 @@ form.addEventListener('submit', function (event) {
         resultField.innerText = "Answer: " + final2;
         event.preventDefault();
     }
-})
+});
+
 
 function resetCalculator(form) {
     // clearing inputs
@@ -95,11 +99,10 @@ function resetCalculator(form) {
         }
     }
 
-    var calcAns = document.getElementById('calculatorAnswer');
-    if (typeof (calcAns) != 'undefined' && calcAns != null) {
+    if (typeof (resultField) != 'undefined' && resultField != null) {
         // exists
-        document.getElementById('calculatorAnswer').innerHTML = 'Answer:<br><br>';
-    }
+        calcAns.innerHTML = 'Answer:<br><br>';
+    };
+    // return false;
+};
 
-    return false;
-}
