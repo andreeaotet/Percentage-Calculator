@@ -5,7 +5,7 @@ var form = document.getElementById('xIsWhatPercentOfY');
 var form2 = document.getElementById('calcOptions');
 
 form2.addEventListener('click', changeCalcTopic);
-function changeCalcTopic(option) {
+function changeCalcTopic() {
     var newTopic = "";
     var topicOption = document.getElementById('select').value;
 
